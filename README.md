@@ -24,5 +24,5 @@
 | 🔹 Portfolio Sites              | Design and develop personal/company portfolios                        |
 | 🔹 Business Websites            | Design websites for local businesses (restaurants, shops, etc.)       |
 | **7. Team & Communication**     |                                                                       |
-| 🔹 Task Management              | Use tools like Trello or WhatsApp groups for project tracking         |
+| 🔹 Task Management              | Use tools like Microsoft Teams or WhatsApp groups for project tracking         |
 | 🔹 Client Communication         | Join meetings, note requirements, show demos                          |
