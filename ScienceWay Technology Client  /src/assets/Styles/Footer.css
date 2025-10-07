@@ -1,0 +1,152 @@
+/* Font & Reset */
+.footer-section {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 60px 20px 30px;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-col {
+    flex: 1 1 250px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    min-width: 220px;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #343a40;
+  }
+  
+  .footer-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+  }
+  
+  .footer-links,
+  .footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li,
+  .footer-contact li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .footer-links a {
+    color: #212529;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #EC1D26;
+    font-weight: bold;
+    transform: translateX(5px);
+    
+  }
+  
+  .footer-contact i {
+    margin-right: 10px;
+    color:  #EC1D26;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    border-top: 1px solid #dee2e6;
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+  .footer-bottom .heart {
+    color: red;
+  }
+  
+  /* WhatsApp Button */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 80%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    transition: transform 0.3s ease;
+  }
+  
+  .whatsapp-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .animate-slide {
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-col {
+      flex: 1 1 100%;
+      text-align: center;
+      padding: 0 10px;
+    }
+  
+    .footer-contact li {
+      justify-content: center;
+    }
+  
+    .footer-logo {
+      margin: 0 auto 10px;
+    }
+  
+    .whatsapp-btn {
+      bottom: 15px;
+      right: 15px;
+      padding: 12px;
+      font-size: 20px;
+    }
+  }

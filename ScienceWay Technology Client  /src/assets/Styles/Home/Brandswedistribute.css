@@ -1,0 +1,113 @@
+ .brand-section {
+     padding: 40px 0;
+     text-align: center;
+      
+ }
+
+ .brand-section h2 {
+     font-size: 24px;
+     font-weight: bold;
+     margin-bottom: 20px;
+     text-align: start;
+ }
+
+ .brand-logo img {
+     max-width: 150px;
+     height: auto;
+     margin: 0 15px;
+     vertical-align: middle;
+ }
+ .contact-link {
+     position: absolute;
+     right: 20px;
+     top: 20px;
+     font-size: 16px;
+ }
+
+ .contact-link a {
+     color: #1DA1F2;
+     text-decoration: none;
+ }
+
+ .contact-link a:hover {
+     text-decoration: underline;
+ }
+
+
+ .card {
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     margin-bottom: 20px;
+ }
+
+ .card-img-top {
+     width: 100%;
+     height: auto;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+ }
+
+ .list-group-item {
+     border: none;
+     padding: 5px 0;
+ }
+
+ .faq-section {
+     background-color: #f8f9fa;
+     padding: 20px;
+     border-radius: 4px;
+ }
+
+ .faq-question {
+     margin-bottom: 10px;
+ }
+
+ .text-blue {
+     color: #007bff;
+ }
+
+ .faq-section {
+     max-width: 800px;
+     margin: 50px auto;
+     background: white;
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+ }
+
+ .faq-title {
+     margin: 30px 20px;
+     padding-left: 15px;
+     font-size: 32px;
+     font-weight: 700;
+     text-align: left;
+     border-left: 5px solid #007BFF;
+     /* Matches blue line from image */
+     color: #333;
+     line-height: 1.4;
+     font-family: 'Segoe UI', sans-serif;
+ }
+
+ .faq-card {
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     margin-bottom: 15px;
+ }
+
+ .faq-card-header {
+     padding: 15px;
+     background-color: #fff;
+     cursor: pointer;
+     font-weight: 500;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .faq-card-header:hover {
+     background-color: #f1f1f1;
+ }
+
+ .faq-card-body {
+     padding: 15px;
+ }

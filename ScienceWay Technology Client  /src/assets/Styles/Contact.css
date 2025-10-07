@@ -1,0 +1,219 @@
+body {
+    background: #fafafa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-header {
+    background-color: #EC1D26;
+    color: #fff;
+    padding: 32px 0 18px 0;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #f5f7fa, #e4ebf1);
+  animation: fadeInUp 0.8s ease-in-out both;
+}
+
+/* CARD STYLING */
+.contact-card {
+  background: #ffffff;
+  max-width: 680px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 48px 36px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  animation: scaleIn 0.6s ease-out;
+}
+
+/* HEADINGS AND PARAGRAPHS */
+.contact-card h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+}
+
+.contact-card p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+/* FORM ELEMENTS */
+.form-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.form-control {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 1.05rem;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #ec1d26;
+  box-shadow: 0 0 0 3px rgba(236, 29, 38, 0.1);
+}
+
+/* BUTTON STYLING */
+.btn-contact {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 0;
+  background-color: #ec1d26;
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-contact:hover {
+  background-color: #d31922;
+  transform: translateY(-2px);
+}
+
+/* FORM SPACING */
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.serching {
+    width: 250px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .serching:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+
+/* Get in Touch Section */
+.getintouch-section {
+    background: #fafafa;
+}
+
+.getintouch-card {
+    background: #f7f7f7;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+    padding: 38px 22px 28px 22px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+}
+
+.getintouch-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(38, 44, 122, 0.10);
+}
+
+.getintouch-icon i {
+    color: #EC1D26;
+    transition: color 0.2s;
+}
+.getintouch-btn {
+    background-color: #EC1D26;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 28px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    margin-top: 10px;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(38, 44, 122, 0.08);
+}
+
+.getintouch-btn:hover {
+    background-color: #EC1D26;
+    color: black;
+    box-shadow: 0 4px 16px rgba(38, 44, 122, 0.12);
+}
+
+@media (max-width: 900px) {
+    .getintouch-card {
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .getintouch-section {
+        padding-top: 18px !important;
+        padding-bottom: 18px !important;
+    }
+
+    .getintouch-card {
+        padding: 24px 8px 18px 8px;
+        max-width: 98vw;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 18px 8px 18px 8px;
+        max-width: 98vw;
+    }
+
+    .contact-section {
+        padding-top: 18px;
+    }
+}

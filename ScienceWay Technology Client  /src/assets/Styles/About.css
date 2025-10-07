@@ -1,0 +1,245 @@
+body {
+    background: #fafafa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about-header {
+    background-color: #EC1D26;
+    color: #fff;
+    padding: 32px 0 18px 0;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* Each card container */
+.about-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Reverse layout */
+.about-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Hover effect on entire card */
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Content column */
+.about-content {
+  flex: 1;
+}
+
+/* Section title label */
+.about-label {
+  color: #EC1D26;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Heading */
+.about-content h5 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Paragraph text */
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Highlighted <b> text inside paragraph */
+.about-content p b {
+  color: #222;
+  font-weight: 600;
+}
+
+/* Image */
+.about-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Hover scale effect on image */
+.about-card:hover .about-img {
+  transform: scale(1.05);
+}
+
+
+.about-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.about-stat {
+  flex: 1 1 200px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.about-stat:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Stat number */
+.about-stat .stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #EC1D26;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Stat label */
+.about-stat .stat-label {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+
+.about-clients {
+  background: #fafafa;
+  padding: 60px 20px;
+}
+
+.about-clients h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+/* Client card container */
+.client-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 24px 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.client-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Client quote text */
+.client-quote {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* Client name */
+.client-name {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 1rem;
+  margin-top: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 12px;
+}
+
+
+@media (max-width: 900px) {
+
+    .about-main,
+    .about-stats {
+        max-width: 100%;
+        padding: 0 6px;
+    }
+
+    .about-card .about-content {
+        padding: 24px 12px 24px 12px;
+    }
+
+    .about-card .about-img {
+        height: 160px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 1.3rem;
+    }
+
+    .about-card {
+        flex-direction: column !important;
+    }
+
+    .about-card .about-img {
+        height: 140px;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 28px;
+    }
+  .about-clients {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+  .client-card {
+    padding: 18px 8px 12px 8px;
+  }
+}

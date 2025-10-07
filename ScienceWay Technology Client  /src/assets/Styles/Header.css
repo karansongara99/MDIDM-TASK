@@ -1,0 +1,169 @@
+/* Logo Styling */
+.logo-img {
+    width: 150px;
+    height: 55px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-img:hover {
+    transform: scale(1.1);
+  }
+  
+  .logo-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+  }
+  
+  /* Navbar Container Layout */
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Center Menu Items */
+  .navbar-collapse {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Navbar Navigation Links */
+  .navbar-nav {
+    gap: 20px;
+  }
+  
+  /* Navbar Links Styling */
+  .navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    color: #333;
+  }
+  
+  .navbar-nav .nav-link:hover
+  .navbar-nav .nav-link.active
+   {
+    color: #EC1D26; /* Theme color */
+  }
+  
+  /* Animated underline on hover */
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #EC1D26;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Dropdown Menu Animation */
+  .dropdown-menu {
+    animation: fadeInDown 0.3s ease forwards;
+    transform-origin: top;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+  }
+  
+  /* Dropdown Hover Effect */
+  .dropdown-item {
+    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 8px 20px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #EC1D26;
+  }
+  
+  /* Dropdown animation keyframes */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Right Side - Search Box and Icons */
+  .navbar .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  /* Search Box Styling */
+  .input-group {
+    border: 1px solid #000;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .input-group:hover {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  .input-group-text {
+    background-color: white;
+    border: none;
+    border-right: 1px solid #ccc;
+  }
+  
+  .form-control {
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-control:focus {
+    width: 200px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Icon spacing */
+  .navbar .fa-user,
+  .navbar .fa-shopping-bag {
+    font-size: 18px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991px) {
+    .navbar .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-collapse {
+      justify-content: flex-start;
+      width: 100%;
+    }
+  
+    .d-flex {
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+  
+    .input-group {
+      width: 100%;
+    }
+  
+    .form-control:focus {
+      width: 100%;
+    }
+  }
+  
