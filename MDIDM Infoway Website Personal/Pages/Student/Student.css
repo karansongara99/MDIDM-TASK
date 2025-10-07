@@ -1,0 +1,191 @@
+.home-banner-sec {
+    position: relative;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.hero-text h1 {
+    padding: 20px;
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.banner-video-wrap {
+    height: calc(100vh - 100px);
+    min-height: 500px;
+    padding: 0;
+}
+
+.banner-video-wrap figure {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.banner-video-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 767.98px) {
+    .hero-text {
+        text-align: center;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-video-wrap {
+        height: 300px;
+    }
+}
+
+
+.contact-form-section {
+    border-radius: 20px;
+    box-shadow: 20px 20px 25px rgb(204, 196, 196);
+    max-width: 900px;
+    height: 520px;
+    margin: 80px auto;
+    padding: 3rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.input-box {
+    border: none;
+    background: #f2f2f2;
+    border-radius: 40px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-box:focus {
+    outline: none;
+    background: #e0e0e0;
+    box-shadow: 0 0 0 0.2rem rgba(67, 100, 129, 0.25);
+}
+
+
+.submit-btn {
+    background-color: #2c2355;
+    color: #fff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #443b6f;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/*Student*/
+
+
+  .placed-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222;
+  }
+
+  .student-card {
+    background-color: #194a5a;
+    border-radius: 25px;
+    padding: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .student-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+
+  .student-name {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 576px) {
+    .student-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+
+  /*Client Slider*/
+
+.slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    width: max-content;
+    gap: 70px;
+    animation: scrollLeft 40s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.client-logo-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.client-logo-circle img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}

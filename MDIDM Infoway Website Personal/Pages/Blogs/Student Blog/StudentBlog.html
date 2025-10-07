@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Blog</title>
+    <link rel="stylesheet" href="/Components/Footer.css" />
+    <link rel="stylesheet" href="/Components/Header.css" />
+    <link rel="stylesheet" href="StudentBlog.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/finalmainlogo.svg" alt="MDIDM Infoway Logo" height="50">
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark" href="/index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ABOUT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/About/About.html">OUR
+                                    COMPANY</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Training/Training.html">TRAINING
+                                    SESSION</a>
+                            </li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/RecentWork/RecentWork.html">OUR
+                                    RECENT
+                                    WORK</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Contact/Contact.html">CONTACT
+                                    US</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="portfolioDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PORTFOLIO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/LogoDesign.html">LOGO
+                                    DESIGN</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/SocialMediaPost.html">SOCIAL
+                                    MEDIA
+                                    POST</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark"
+                                    href="/Portfolio/BrochureDesign.html">BROCHURE DESIGN</a>
+                            </li>
+                            <li><a class="dropdown-item fw-bold text-dark"
+                                    href="/Portfolio/BusinessCardDesign.html">BUSINESS CARD
+                                    DESIGN</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/LetterHead.html">LETTER
+                                    HEAD</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/DigitalCard.html">DIGITAL
+                                    CARD</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/WebsiteDevelop.html">WEBSITE
+                                    DEVELOPMENT</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/AppDevelop.html">APPLICATION
+                                    DEVELOPMENT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            BLOGS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Blogs/Blog/Blog.html">BLOGS</a>
+                            </li>
+                            <li><a class="dropdown-item fw-bold text-dark"
+                                    href="/Pages/Blogs/Student Blog/StudentBlog.html">STUDENTS
+                                    BLOGS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark"
+                            href="/Pages/Training/Traning.html">TRAINING</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark"
+                            href="/Pages/Student/Student.html">STUDENTS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark"
+                            href="/Pages/Events/Event.html">EVENTS</a></li>
+                </ul>
+            </div>
+            <a href="#" class="custom-btn" style="text-decoration: none;" data-bs-toggle="modal"
+                data-bs-target="#work-with-us-modal">
+                WORK WITH US &nbsp;&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="home-banner-sec">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Left: Heading Content -->
+                <div class="col-lg-6 col-md-12 hero-text" title="company title text">
+                    <h1 class="heading p-5 m-5" data-tilt data-tilt-startX="1" data-tilt-startY="-1"
+                        data-tilt-full-page-listening style="font-size: 5rem;">
+                        <span>Designing</span>
+                        <span>Excellence ,</span>
+                        <span>Every Detail </span>
+                        <span>Matters.</span>
+                    </h1>
+                </div>
+
+                <!-- Right: Video Content -->
+                <div class="col-lg-6 col-md-12 banner-video-wrap">
+                    <figure>
+                        <img src="/images/blog.gif" alt="Animated graphic" class="bnr-video" width="100%"
+                            height="88%" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Our Blogs-->
+    <div class="col-12 all-clients-title pt-5 mt-3 mt-sm-5 mb-5 ">
+        <h2 class="title uppercase fs-bold ft40 text-center">
+            OUR STUDENT BLOGS
+        </h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <section class="about-us-sec col-lg-9" id="about" style="padding-top:0px">
+                <span style="display: none;">
+                    Divyanshu-Sanghani---s-Transformative-Journey-into-Graphic-Design-at-MDIDM-Infoway
+                    Divyanshu Sanghani s Transformative Journey into Graphic Design at MDIDM Infoway
+                </span></span>
+
+
+                <div class="row " style="margin-bottom : 5rem;">
+                    <div class=" col-lg-12 ">
+
+                        <img loading="lazy" style="width: 100%; height: auto;" class="ch-bg-img "
+                            src="https://www.mdidminfoway.com/blog/images/2025/02/1739857435.png"
+                            alt="Divyanshu Sanghani   s Transformative Journey into Graphic Design at MDIDM Infoway">
+
+
+
+                    </div>
+                    <div class=" col-lg-12">
+                        <div class="about-us-content">
+                            <a style="color: #000; text-decoration: none;"
+                                href="https://www.mdidminfoway.com/blogs/divyanshu-sanghani---s-transformative-journey-into-graphic-design-at-mdidm-infoway">
+                                <h3 class="section-title" style="text-transform: uppercase; font-size: 40px;">
+                                    Divyanshu Sanghani s Transformative Journey into Graphic Design at MDIDM Infoway
+                                </h3>
+                            </a>
+                            <p class="section-describe" style="text-align:justify; color: grey; font-size: 17px;">
+                                Divyanshu Sanghani’s Journey into Graphic Design at MDIDM Infoway
+
+                                Divyanshu Sanghani joined MDIDM Infoway with a goal: to become a skilled graphic
+                                designer. His passion and determination helped him master the field.
+
+                                Training &amp; Skills
+                                At MDIDM Infoway, Divyanshu gained expertise in typography, color theory, and digital
+                                tools like Photoshop, Illustrator, and InDesign. Practical projects reinforced his
+                                learning, building his problem-solving and creative skills.
+
+                                Overcoming Challenges
+                                Meeting deadlines, refining designs, and handling client feedback were hurdles he faced.
+                                With mentor guidance, he turned challenges into growth opportunities, developing strong
+                                visual communication and branding skills.
+
+                                Transformation &amp; Impact
+                                Divyanshu evolved from a novice to a confident designer, crediting MDIDM Infoway’s
+                                holistic approach. His journey inspires aspiring designers to pursue their goals with
+                                dedication.
+
+                                MDIDM Infoway continues to empower individuals like Divyanshu, equipping them with the
+                                skills to excel in graphic design.</p>
+                            <div class="position-relative">
+                                <a class="ReadMore" style="text-decoration: none; color: #2c3e50;"
+                                    href="https://www.mdidminfoway.com/blogs/divyanshu-sanghani---s-transformative-journey-into-graphic-design-at-mdidm-infoway">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <span style="display: none;">
+                    Prit-Sinojiya---s-Transformative-Journey-into-Graphic-Design-at-MDIDM-Infoway
+                    Prit Sinojiya s Transformative Journey into Graphic Design at MDIDM Infoway
+                </span></span>
+
+
+                <div class="row " style="margin-bottom : 5rem;">
+                    <div class=" col-lg-12 ">
+
+                        <img loading="lazy" style="width: 100%; height: auto;" class="ch-bg-img "
+                            src="https://www.mdidminfoway.com/blog/images/2025/02/1739856836.png"
+                            alt="Prit Sinojiya   s Transformative Journey into Graphic Design at MDIDM Infoway">
+
+
+
+                    </div>
+                    <div class=" col-lg-12">
+                        <div class="about-us-content">
+                            <a style="color: #000; text-decoration: none;"
+                                href="https://www.mdidminfoway.com/blogs/prit-sinojiya---s-transformative-journey-into-graphic-design-at-mdidm-infoway">
+                                <h3 title=" Best It Company" class="section-title"
+                                    style="text-transform: uppercase; font-size: 40px;">
+                                    Prit Sinojiya s Transformative Journey into Graphic Design at MDIDM Infoway</h3>
+                            </a>
+                            <p class="section-describe" style="text-align:justify; color: grey; font-size: 17px;">
+                                Prit Sinojiya’s Journey into Graphic Design at MDIDM Infoway
+
+                                Prit Sinojiya joined MDIDM Infoway with the goal of becoming a skilled graphic designer.
+                                His dedication and passion for creativity helped him embrace the challenges of this
+                                dynamic field.
+
+                                The comprehensive training program covered key aspects like typography, color theory,
+                                and digital tools such as Adobe Photoshop, Illustrator, and InDesign. Practical projects
+                                provided hands-on experience, enhancing his problem-solving skills.
+
+                                Guided by experienced mentors, Prit overcame challenges like tight deadlines and client
+                                feedback. He mastered visual communication, brand identity, and portfolio development.
+
+                                Today, Prit is a confident designer, crediting his success to MDIDM Infoway’s structured
+                                training. His journey serves as an inspiration, proving that with dedication and
+                                guidance, success in design is achievable.</p>
+                            <div class="position-relative">
+                                <a class="ReadMore" style="text-decoration: none; color: #2c3e50;"
+                                    href="https://www.mdidminfoway.com/blogs/prit-sinojiya---s-transformative-journey-into-graphic-design-at-mdidm-infoway">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <span style="display: none;">
+                    Happy-Birthday-to-Our-Over-Respected-HR--Umangi-Ubhadiya----------
+                    Happy Birthday to Our Over Respected HR Umangi Ubhadiya
+                </span></span>
+
+
+                <div class="row " style="margin-bottom : 5rem;">
+                    <div class=" col-lg-12 ">
+
+                        <img loading="lazy" style="width: 100%; height: auto;" class="ch-bg-img "
+                            src="https://www.mdidminfoway.com/blog/images/2025/01/1738305417.png"
+                            alt="Happy Birthday to Our Over Respected HR  Umangi Ubhadiya          ">
+
+
+
+                    </div>
+                    <div class=" col-lg-12">
+                        <div class="about-us-content">
+                            <a style="color: #000; text-decoration: none;"
+                                href="https://www.mdidminfoway.com/blogs/happy-birthday-to-our-over-respected-hr--umangi-ubhadiya----------">
+                                <h3 class="section-title" style="text-transform: uppercase; font-size: 40px;">
+                                    Happy Birthday to Our Over Respected HR Umangi Ubhadiya </h3>
+                            </a>
+                            <p class="section-describe" style="text-align:justify; color: grey; font-size: 17px;">
+                                Happy Birthday, Umangi Ubhadiya! 🎉🎂
+
+                                Wishing our most respected HR, Umangi Ubhadiya, a fantastic birthday filled with joy,
+                                success, and good health! Your dedication, leadership, and kindness make our workplace
+                                better every day. Thank you for your guidance and support.
+
+                                May this year bring you endless happiness and achievements! 🎊🎈🎁
+
+                                Best wishes,team MDIDM INFOWAY</p>
+                            <div class="position-relative">
+                                <a class="ReadMore" style="text-decoration: none; color: #2c3e50;"
+                                    href="https://www.mdidminfoway.com/blogs/happy-birthday-to-our-over-respected-hr--umangi-ubhadiya----------">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <span style="display: none;">
+                    KAUSHIK-CHAVDA---S-TRANSFORMATIVE-JOURNEY-INTO-WEB-DEVELOPMENT-AT-MDIDM-INFOWAY
+                    KAUSHIK CHAVDA S TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                </span></span>
+
+
+                <div class="row " style="margin-bottom : 5rem;">
+                    <div class=" col-lg-12 ">
+
+                        <img loading="lazy" style="width: 100%; height: auto;" class="ch-bg-img "
+                            src="https://www.mdidminfoway.com/blog/images/2025/01/1738155157.png"
+                            alt="KAUSHIK CHAVDA   S TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY">
+
+
+
+                    </div>
+                    <div class=" col-lg-12">
+                        <div class="about-us-content">
+                            <a style="color: #000; text-decoration: none;"
+                                href="https://www.mdidminfoway.com/blogs/kaushik-chavda---s-transformative-journey-into-web-development-at-mdidm-infoway">
+                                <h3 title=" Best It Company" class="section-title"
+                                    style="text-transform: uppercase; font-size: 40px;">
+                                    KAUSHIK CHAVDA S TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY</h3>
+                            </a>
+                            <p class="section-describe" style="text-align:justify; color: grey; font-size: 17px;">
+                                Explore Kaushik Chavda’s remarkable experience in mastering web development at MDIDM
+                                Infoway, gaining hands-on skills and insights to excel in the tech world.</p>
+                            <div class="position-relative">
+                                <a class="ReadMore" style="text-decoration: none; color: #2c3e50;"
+                                    href="https://www.mdidminfoway.com/blogs/kaushik-chavda---s-transformative-journey-into-web-development-at-mdidm-infoway">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <span style="display: none;">
+                    ANKIT-KORIYA-S-TRANSFORMATIVE-JOURNEY-INTO-FLUTTER-DEVELOPMENT
+                    ANKIT KORIYA S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT
+                </span></span>
+
+
+                <div class="row " style="margin-bottom : 5rem;">
+                    <div class=" col-lg-12 ">
+
+                        <img loading="lazy" style="width: 100%; height: auto;" class="ch-bg-img "
+                            src="https://www.mdidminfoway.com/blog/images/2025/01/1738154570.png"
+                            alt="ANKIT KORIYA S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT">
+
+
+
+                    </div>
+                    <div class=" col-lg-12">
+                        <div class="about-us-content">
+                            <a style="color: #000; text-decoration: none;"
+                                href="https://www.mdidminfoway.com/blogs/ankit-koriya-s-transformative-journey-into-flutter-development">
+                                <h3 title=" Best It Company" class="section-title"
+                                    style="text-transform: uppercase; font-size: 40px;">
+                                    ANKIT KORIYA S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT</h3>
+                            </a>
+                            <p class="section-describe" style="text-align:justify; color: grey; font-size: 17px;">
+                                Explore Ankit Koriya’s remarkable experience in mastering Flutter mobile app development
+                                at MDIDM Infoway, gaining hands-on skills and insights to excel in the app development
+                                world.</p>
+                            <div class="position-relative">
+                                <a class="ReadMore" style="text-decoration: none; color: #2c3e50;"
+                                    href="https://www.mdidminfoway.com/blogs/ankit-koriya-s-transformative-journey-into-flutter-development">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pagination-wrapper">
+                    <nav>
+                        <ul class="pagination">
+
+                            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                                <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                            </li>
+
+
+
+
+
+                            <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs/students?page=2">2</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs/students?page=3">3</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs/students?page=4">4</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs/students?page=5">5</a></li>
+
+
+                            <li class="page-item">
+                                <a class="page-link" href="https://www.mdidminfoway.com/blogs/students?page=2"
+                                    rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </section>
+            <section class="col-lg-3">
+                <div class="sidebar">
+                    <h3 class="sidebar-title">Recent Posts</h3>
+                    <div class="sidebar-item search-form">
+                        <form action="">
+                            <input id="searchbar" onkeyup="search_animal()" name="search" placeholder="Search Blogs.."
+                                type="text">
+
+                            <ul id='list'>
+                                <span style="display: none;">
+                                    Divyanshu-Sanghani---s-Transformative-Journey-into-Graphic-Design-at-MDIDM-Infoway
+                                    Divyanshu Sanghani s Transformative Journey into Graphic Design at MDIDM Infoway
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/02/1739857435.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/divyanshu-sanghani---s-transformative-journey-into-graphic-design-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>Divyanshu Sanghani s
+                                                        Transformative Journey into Graphic Design at MDIDM Infoway
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-02-18 05:43:55 "> 18 February 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    Prit-Sinojiya---s-Transformative-Journey-into-Graphic-Design-at-MDIDM-Infoway
+                                    Prit Sinojiya s Transformative Journey into Graphic Design at MDIDM Infoway
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/02/1739856836.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/prit-sinojiya---s-transformative-journey-into-graphic-design-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>Prit Sinojiya s
+                                                        Transformative Journey into Graphic Design at MDIDM Infoway
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-02-18 05:33:56 "> 18 February 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    Happy-Birthday-to-Our-Over-Respected-HR--Umangi-Ubhadiya----------
+                                    Happy Birthday to Our Over Respected HR Umangi Ubhadiya
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1738305417.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/happy-birthday-to-our-over-respected-hr--umangi-ubhadiya----------"
+                                                    style="color:black; text-decoration: none;"> <b>Happy Birthday to
+                                                        Our Over Respected HR Umangi Ubhadiya </b></a>
+                                            </p>
+                                            <time datetime="2025-01-31 06:36:57 "> 31 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    KAUSHIK-CHAVDA---S-TRANSFORMATIVE-JOURNEY-INTO-WEB-DEVELOPMENT-AT-MDIDM-INFOWAY
+                                    KAUSHIK CHAVDA S TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1738155157.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/kaushik-chavda---s-transformative-journey-into-web-development-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>KAUSHIK CHAVDA S
+                                                        TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-29 12:52:37 "> 29 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    ANKIT-KORIYA-S-TRANSFORMATIVE-JOURNEY-INTO-FLUTTER-DEVELOPMENT
+                                    ANKIT KORIYA S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1738154570.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/ankit-koriya-s-transformative-journey-into-flutter-development"
+                                                    style="color:black; text-decoration: none;"> <b>ANKIT KORIYA S
+                                                        TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT </b></a>
+                                            </p>
+                                            <time datetime="2025-01-29 12:42:50 "> 29 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    YASHVI-GAJIPARA---S-TRANSFORMATIVE-JOURNEY-INTO-WEB-DEVELOPMENT-AT-MDIDM-INFOWAY
+                                    YASHVI GAJIPARA S TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1738153761.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/yashvi-gajipara---s-transformative-journey-into-web-development-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>YASHVI GAJIPARA S
+                                                        TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-29 12:29:21 "> 29 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    JAY-RATHOD---S-TRANSFORMATIVE-JOURNEY-INTO-GRAPHIC-DESIGN-AT-MDIDM-INFOWAY
+                                    JAY RATHOD S TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1738152694.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/jay-rathod---s-transformative-journey-into-graphic-design-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>JAY RATHOD S
+                                                        TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-29 12:11:34 "> 29 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    SAHIL-RAMANI-S-TRANSFORMATIVE-JOURNEY-INTO-FLUTTER-DEVELOPMENT
+                                    SAHIL RAMANI S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737974508.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/sahil-ramani-s-transformative-journey-into-flutter-development"
+                                                    style="color:black; text-decoration: none;"> <b>SAHIL RAMANI S
+                                                        TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT </b></a>
+                                            </p>
+                                            <time datetime="2025-01-27 10:41:48 "> 27 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    CHANDRESH-PARMAR-S-TRANSFORMATIVE-JOURNEY-INTO-FLUTTER-DEVELOPMENT
+                                    CHANDRESH PARMAR S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737974144.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/chandresh-parmar-s-transformative-journey-into-flutter-development"
+                                                    style="color:black; text-decoration: none;"> <b>CHANDRESH PARMAR S
+                                                        TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT </b></a>
+                                            </p>
+                                            <time datetime="2025-01-27 10:35:44 "> 27 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    ROHIT-DABHI-S-TRANSFORMATIVE-JOURNEY-INTO-FLUTTER-DEVELOPMENT
+                                    ROHIT DABHI S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737973819.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/rohit-dabhi-s-transformative-journey-into-flutter-development"
+                                                    style="color:black; text-decoration: none;"> <b>ROHIT DABHI S
+                                                        TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT </b></a>
+                                            </p>
+                                            <time datetime="2025-01-27 10:30:19 "> 27 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    DISHA-VYAS---S-TRANSFORMATIVE-JOURNEY-INTO-GRAPHIC-DESIGN-AT-MDIDM-INFOWAY
+                                    DISHA VYAS S TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737973260.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/disha-vyas---s-transformative-journey-into-graphic-design-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>DISHA VYAS S
+                                                        TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-27 10:21:00 "> 27 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    MADHAV-CHAVDA---S-TRANSFORMATIVE-JOURNEY-INTO-GRAPHIC-DESIGN-AT-MDIDM-INFOWAY
+                                    MADHAV CHAVDA S TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737972790.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/madhav-chavda---s-transformative-journey-into-graphic-design-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>MADHAV CHAVDA S
+                                                        TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-27 10:13:10 "> 27 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    KRUPALI-CHAUHAN---S-TRANSFORMATIVE-JOURNEY-INTO-GRAPHIC-DESIGN-AT-MDIDM-INFOWAY
+                                    KRUPALI CHAUHAN S TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737972210.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/krupali-chauhan---s-transformative-journey-into-graphic-design-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>KRUPALI CHAUHAN S
+                                                        TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-27 10:03:30 "> 27 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    DARSHITA-SOJITRA-S-TRANSFORMATIVE-JOURNEY-INTO-FLUTTER-DEVELOPMENT---UI-UX-AT-MDIDM-INFOWAY
+                                    DARSHITA SOJITRA S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT UI UX AT MDIDM
+                                    INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737971340.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/darshita-sojitra-s-transformative-journey-into-flutter-development---ui-ux-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>DARSHITA SOJITRA S
+                                                        TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT UI UX AT MDIDM
+                                                        INFOWAY </b></a>
+                                            </p>
+                                            <time datetime="2025-01-27 09:49:00 "> 27 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    NEHAL-PATEL-S-TRANSFORMATIVE-JOURNEY-INTO-FLUTTER-DEVELOPMENT---UI-UX-AT-MDIDM-INFOWAY
+                                    NEHAL PATEL S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT UI UX AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737810689.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/nehal-patel-s-transformative-journey-into-flutter-development---ui-ux-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>NEHAL PATEL S
+                                                        TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT UI UX AT MDIDM
+                                                        INFOWAY </b></a>
+                                            </p>
+                                            <time datetime="2025-01-25 13:11:29 "> 25 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    ASMITA-JETHVA---S-TRANSFORMATIVE-JOURNEY-INTO-WEB-DEVELOPMENT-AT-MDIDM-INFOWAY
+                                    ASMITA JETHVA S TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737810218.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/asmita-jethva---s-transformative-journey-into-web-development-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>ASMITA JETHVA S
+                                                        TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-25 13:03:38 "> 25 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    BHAVIKA-PARMAR---S-TRANSFORMATIVE-JOURNEY-INTO-WEB-DEVELOPMENT-AT-MDIDM-INFOWAY
+                                    BHAVIKA PARMAR S TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737809757.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/bhavika-parmar---s-transformative-journey-into-web-development-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>BHAVIKA PARMAR S
+                                                        TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-25 12:55:57 "> 25 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    BHUMI-KHAPRA---S-TRANSFORMATIVE-JOURNEY-INTO-GRAPHIC-DESIGN-AT-MDIDM-INFOWAY
+                                    BHUMI KHAPRA S TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737809060.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/bhumi-khapra---s-transformative-journey-into-graphic-design-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>BHUMI KHAPRA S
+                                                        TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-25 12:44:20 "> 25 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    DARSHIT-AMBALIYA---S-TRANSFORMATIVE-JOURNEY-INTO-WEB-DEVELOPMENT-AT-MDIDM-INFOWAY
+                                    DARSHIT AMBALIYA S TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737806843.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/darshit-ambaliya---s-transformative-journey-into-web-development-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>DARSHIT AMBALIYA S
+                                                        TRANSFORMATIVE JOURNEY INTO WEB DEVELOPMENT AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-25 12:07:23 "> 25 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    SHREYA-KALAVADIYA---S-TRANSFORMATIVE-JOURNEY-INTO-GRAPHIC-DESIGN-AT-MDIDM-INFOWAY
+                                    SHREYA KALAVADIYA S TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737722372.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/shreya-kalavadiya---s-transformative-journey-into-graphic-design-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>SHREYA KALAVADIYA S
+                                                        TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-24 12:39:32 "> 24 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    DIPALEE-FEFAR-S-TRANSFORMATIVE-JOURNEY-INTO-FLUTTER-DEVELOPMENT---UI-UX-AT-MDIDM-INFOWAY
+                                    DIPALEE FEFAR S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT UI UX AT MDIDM
+                                    INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737720754.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/dipalee-fefar-s-transformative-journey-into-flutter-development---ui-ux-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>DIPALEE FEFAR S
+                                                        TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT UI UX AT MDIDM
+                                                        INFOWAY </b></a>
+                                            </p>
+                                            <time datetime="2025-01-24 12:12:34 "> 24 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    NIRU-SHIDA---S-TRANSFORMATIVE-JOURNEY-INTO-GRAPHIC-DESIGN-AT-MDIDM-INFOWAY
+                                    NIRU SHIDA S TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737719768.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/niru-shida---s-transformative-journey-into-graphic-design-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>NIRU SHIDA S
+                                                        TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-24 11:56:08 "> 24 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    KRISH-BUSA-S-TRANSFORMATIVE-JOURNEY-INTO-FLUTTER-DEVELOPMENT-AT-MDIDM-INFOWAY
+                                    KRISH BUSA S TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737717675.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/krish-busa-s-transformative-journey-into-flutter-development-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>KRISH BUSA S
+                                                        TRANSFORMATIVE JOURNEY INTO FLUTTER DEVELOPMENT AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-24 11:21:15 "> 24 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    HIREN-KACHHADIYA---S-TRANSFORMATIVE-JOURNEY-INTO-GRAPHIC-DESIGN-AT-MDIDM-INFOWAY
+                                    HIREN KACHHADIYA S TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1737716683.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/hiren-kachhadiya---s-transformative-journey-into-graphic-design-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>HIREN KACHHADIYA S
+                                                        TRANSFORMATIVE JOURNEY INTO GRAPHIC DESIGN AT MDIDM INFOWAY
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-24 11:04:43 "> 24 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    Sanjay-Vithlapara-s-Transformative-Journey-into-Flutter-Development-at-MDIDM-Infoway
+                                    Sanjay Vithlapara s Transformative Journey into Flutter Development at MDIDM Infoway
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/01/1736942745.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/sanjay-vithlapara-s-transformative-journey-into-flutter-development-at-mdidm-infoway"
+                                                    style="color:black; text-decoration: none;"> <b>Sanjay Vithlapara s
+                                                        Transformative Journey into Flutter Development at MDIDM Infoway
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-01-15 12:05:45 "> 15 January 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </form>
+                    </div><!-- End sidebar search formn-->
+
+
+
+
+                </div><!-- End sidebar -->
+
+        </div><!-- End blog sidebar -->
+        </section>
+    </div>
+    <!--Footer-->
+    <footer class="footer-wrapper overlay">
+        <div class="container py-5">
+            <div class="row text-white">
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">CONTACT US</h4>
+                    <p class="address">
+                        211, Vision 20-20, near Ramapir Chokadi, Rajkot, Gujarat 360007.
+                    </p>
+                    <p>
+                        <a href="tel:+91 8347193531">+91 8347193531</a>
+                    </p>
+                    <p>
+                        <a href="tel:+91 9426526980">+91 9426526980</a>
+                    </p>
+                    <p>
+                        <a href="mailto:mdidminfoway@gmail.com">mdidminfoway@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">WEBSITE DEVELOPMENT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Website</a></li>
+                        <li><a href="#">E-Commerce</a></li>
+                        <li><a href="#">Complete ERP</a></li>
+                        <li><a href="#">Informative Website</a></li>
+                        <li><a href="#">Custom Website</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">MOBILE APP DEVELOPMENT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Business App</a></li>
+                        <li><a href="#">E-Commerce App</a></li>
+                        <li><a href="#">Custom App</a></li>
+                        <li><a href="#">Android/iOS/Flutter</a></li>
+                        <li><a href="#">Complete ERP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">GRAPHICS DESIGNING</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Logo Design</a></li>
+                        <li><a href="#">Stationary Design</a></li>
+                        <li><a href="#">Product Video</a></li>
+                        <li><a href="#">Brochure/Company Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-4">
+                <p class="copyright" style="color: white">
+                    © Copyright
+                    <a href="https://www.mdidminfoway.com/" class="company-link">MDIDM INFOWAY</a>
+                    . All Rights Reserved
+                </p>
+                <p class="developed-by" style="color: white">
+                    Developed by
+                    <img src="../../../images/heart.png" alt="heart" class="heart-icon" />
+                    <a href="https://mdidminfoway.com/" class="company-link">MDIDM INFOWAY</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="StudentBlog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Components/Header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+    <!--Work With Us Modal-->
+    <div class="modal fade" id="work-with-us-modal" tabindex="-1" aria-labelledby="work-with-us-modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content h-100">
+                <div class="modal-header pt-4 pb-0 no-border">
+                    <div class="modal-title w-100 text-center" id="work-with-us-modalLabel">
+                        <h2 class="form-title uppercase mb-2 fw-bold mt-3">ESTIMATE YOUR PROJECT</h2>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <form class="px-4" method="post" id="contact-form-popup" action="contectus">
+                        <input type="hidden" name="_token" value="your_token_here">
+                        <div class="form-row row">
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Name" name="namepopup" required>
+                            </div>
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="email" class="form-control" placeholder="Email" name="emailpopup" required>
+                            </div>
+                        </div>
+                        <div class="form-row row">
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Phone" name="phonepopup" required>
+                            </div>
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Subject" name="subjectpopup"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row row">
+                            <div class="col-12 pt-3 mt-2">
+                                <textarea class="form-control" rows="4" placeholder="Message" name="messagepopup"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center pt-4 pb-3">
+                            <input name="submit" type="submit" value="Work with us" class="uppercase p-2 w-25"
+                                style="background-color:#1e354c; color: white; border-radius: 8px;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

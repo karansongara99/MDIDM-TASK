@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Components/Footer.css" />
+    <link rel="stylesheet" href="/Components/Header.css" />
+    <link rel="stylesheet" href="Blog.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/finalmainlogo.svg" alt="MDIDM Infoway Logo" height="50">
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark" href="/index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ABOUT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/About/About.html">OUR
+                                    COMPANY</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Training/Training.html">TRAINING
+                                    SESSION</a>
+                            </li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/RecentWork/RecentWork.html">OUR
+                                    RECENT
+                                    WORK</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Contact/Contact.html">CONTACT
+                                    US</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="portfolioDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PORTFOLIO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/LogoDesign.html">LOGO
+                                    DESIGN</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/SocialMediaPost.html">SOCIAL
+                                    MEDIA
+                                    POST</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark"
+                                    href="/Portfolio/BrochureDesign.html">BROCHURE DESIGN</a>
+                            </li>
+                            <li><a class="dropdown-item fw-bold text-dark"
+                                    href="/Portfolio/BusinessCardDesign.html">BUSINESS CARD
+                                    DESIGN</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/LetterHead.html">LETTER
+                                    HEAD</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/DigitalCard.html">DIGITAL
+                                    CARD</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/WebsiteDevelop.html">WEBSITE
+                                    DEVELOPMENT</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/AppDevelop.html">APPLICATION
+                                    DEVELOPMENT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            BLOGS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Blogs/Blog/Blog.html">BLOGS</a>
+                            </li>
+                            <li><a class="dropdown-item fw-bold text-dark"
+                                    href="/Pages/Blogs/Student Blog/StudentBlog.html">STUDENTS
+                                    BLOGS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark"
+                            href="/Pages/Training/Traning.html">TRAINING</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark"
+                            href="/Pages/Student/Student.html">STUDENTS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark"
+                            href="/Pages/Events/Event.html">EVENTS</a></li>
+                </ul>
+            </div>
+            <a href="#" class="custom-btn" style="text-decoration: none;" data-bs-toggle="modal"
+                data-bs-target="#work-with-us-modal">
+                WORK WITH US &nbsp;&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="home-banner-sec">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Left: Heading Content -->
+                <div class="col-lg-6 col-md-12 hero-text" title="company title text">
+                    <h1 class="heading p-5 m-5" data-tilt data-tilt-startX="1" data-tilt-startY="-1"
+                        data-tilt-full-page-listening style="font-size: 5rem;">
+                        <span>Designing</span>
+                        <span>Excellence ,</span>
+                        <span>Every Detail </span>
+                        <span>Matters.</span>
+                    </h1>
+                </div>
+
+                <!-- Right: Video Content -->
+                <div class="col-lg-6 col-md-12 banner-video-wrap">
+                    <figure>
+                        <img src="/images/blog.gif" alt="Animated graphic" class="bnr-video" width="105%"
+                            height="88%" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Our Blogs-->
+    <div class="col-12 all-clients-title pt-5 mt-3 mt-sm-5 mb-5 ">
+        <h2 class="title uppercase bold fw-bold text-center">
+            OUR BLOGS
+        </h2>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <section class="about-us-sec col-lg-9" id="about" style="padding-top:0px">
+                <span style="display: none;">
+                    Best-PHP-training-in-Rajkot
+                    Best PHP training in Rajkot
+                </span></span>
+
+
+                <div class="row " style="margin-bottom : 5rem;">
+                    <div class=" col-lg-12 ">
+
+                        <img loading="lazy" style="width: 100%; height: auto;" class="ch-bg-img "
+                            src="https://www.mdidminfoway.com/blog/images/2025/07/1753785848.png"
+                            alt="Best PHP training in Rajkot">
+
+
+
+                    </div>
+                    <div class=" col-lg-12">
+                        <div class="about-us-content">
+                            <a style="color: #000"
+                                href="https://www.mdidminfoway.com/blogs/best-php-training-in-rajkot">
+                                <h3 class="section-title" style="text-transform: uppercase; font-size: 40px;">
+                                    Best PHP training in Rajkot</h3>
+                            </a>
+                            <p class="section-describe" style="text-align:justify; color: grey; font-size: 17px;">
+                                Best PHP Training in Rajkot
+                                Learn PHP, MySQL, and web development with real projects and expert guidance. Perfect
+                                for students, freshers, and freelancers. Get certified and become job-ready.
+
+                                Start your journey in web development today!</p>
+                            <div class="position-relative">
+                                <a class="ReadMore" style="text-decoration: none; color: #2c3e50;"
+                                    href="https://www.mdidminfoway.com/blogs/best-php-training-in-rajkot">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <span style="display: none;">
+                    Best-PHP-course-in-Rajkot
+                    Best PHP course in Rajkot
+                </span></span>
+
+
+                <div class="row " style="margin-bottom : 5rem;">
+                    <div class=" col-lg-12 ">
+
+                        <img loading="lazy" style="width: 100%; height: auto;" class="ch-bg-img "
+                            src="https://www.mdidminfoway.com/blog/images/2025/07/1753785363.png"
+                            alt="Best PHP course in Rajkot">
+
+
+
+                    </div>
+                    <div class=" col-lg-12">
+                        <div class="about-us-content">
+                            <a style="color: #000" href="https://www.mdidminfoway.com/blogs/best-php-course-in-rajkot">
+                                <h3 class="section-title" style="text-transform: uppercase; font-size: 40px;">
+                                    Best PHP course in Rajkot</h3>
+                            </a>
+                            <p class="section-describe" style="text-align:justify; color: grey; font-size: 17px;">
+                                Best PHP Course in Rajkot
+                                Learn PHP, MySQL, and web development with real projects, expert mentors, and flexible
+                                classes. Ideal for students, freshers, and freelancers.
+
+                                Start your career in web development today!</p>
+                            <div class="position-relative">
+                                <a class="ReadMore" style="text-decoration: none; color: #2c3e50;"
+                                    href="https://www.mdidminfoway.com/blogs/best-php-course-in-rajkot">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <span style="display: none;">
+                    Online-PHP-internship-in-Rajkot
+                    Online PHP internship in Rajkot
+                </span></span>
+
+
+                <div class="row " style="margin-bottom : 5rem;">
+                    <div class=" col-lg-12 ">
+
+                        <img loading="lazy" style="width: 100%; height: auto;" class="ch-bg-img "
+                            src="https://www.mdidminfoway.com/blog/images/2025/07/1753785082.png"
+                            alt="Online PHP internship in Rajkot">
+
+
+
+                    </div>
+                    <div class=" col-lg-12">
+                        <div class="about-us-content">
+                            <a style="color: #000"
+                                href="https://www.mdidminfoway.com/blogs/online-php-internship-in-rajkot">
+                                <h3 class="section-title" style="text-transform: uppercase; font-size: 40px;">
+                                    Online PHP internship in Rajkot</h3>
+                            </a>
+                            <p class="section-describe" style="text-align:justify; color: grey; font-size: 17px;">
+                                Join Online PHP Internship in Rajkot
+                                Gain hands-on experience, build real projects, and boost your web development career
+                                from home. Perfect for students, freshers, and tech enthusiasts.
+
+                                Start your journey today!</p>
+                            <div class="position-relative">
+                                <a class="ReadMore" style="text-decoration: none; color: #2c3e50;"
+                                    href="https://www.mdidminfoway.com/blogs/online-php-internship-in-rajkot">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <span style="display: none;">
+                    online-PHP-training-in-Rajkot
+                    online PHP training in Rajkot
+                </span></span>
+
+
+                <div class="row " style="margin-bottom : 5rem;">
+                    <div class=" col-lg-12 ">
+
+                        <img loading="lazy" style="width: 100%; height: auto;" class="ch-bg-img "
+                            src="https://www.mdidminfoway.com/blog/images/2025/07/1753784558.png"
+                            alt="online PHP training in Rajkot">
+
+
+
+                    </div>
+                    <div class=" col-lg-12">
+                        <div class="about-us-content">
+                            <a style="color: #000"
+                                href="https://www.mdidminfoway.com/blogs/online-php-training-in-rajkot">
+                                <h3 class="section-title" style="text-transform: uppercase; font-size: 40px;">
+                                    online PHP training in Rajkot</h3>
+                            </a>
+                            <p class="section-describe" style="text-align:justify; color: grey; font-size: 17px;">
+                                Online PHP Training in Rajkot
+                                Learn PHP from anywhere in Rajkot and kickstart your web development career!
+                                Beginner-friendly
+                                Hands-on projects
+                                Job-ready skills
+                                Become a PHP developer with flexible online classes—start today!</p>
+                            <div class="position-relative">
+                                <a class="ReadMore" style="text-decoration: none; color: #2c3e50;"
+                                    href="https://www.mdidminfoway.com/blogs/online-php-training-in-rajkot">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <span style="display: none;">
+                    online-PHP-course-in-Rajkot
+                    online PHP course in Rajkot
+                </span></span>
+
+
+                <div class="row " style="margin-bottom : 5rem;">
+                    <div class=" col-lg-12 ">
+
+                        <img loading="lazy" style="width: 100%; height: auto;" class="ch-bg-img "
+                            src="https://www.mdidminfoway.com/blog/images/2025/07/1753781885.png"
+                            alt="online PHP course in Rajkot">
+
+
+
+                    </div>
+                    <div class=" col-lg-12">
+                        <div class="about-us-content">
+                            <a style="color: #000"
+                                href="https://www.mdidminfoway.com/blogs/online-php-course-in-rajkot">
+                                <h3 class="section-title" style="text-transform: uppercase; font-size: 40px;">
+                                    online PHP course in Rajkot</h3>
+                            </a>
+                            <p class="section-describe" style="text-align:justify; color: grey; font-size: 17px;">
+                                Learn PHP Online in Rajkot
+
+                                Kickstart your web development journey with flexible, affordable online PHP courses in
+                                Rajkot. Learn from experts, work on real projects, and build career-ready skills—from
+                                anywhere, anytime.</p>
+                            <div class="position-relative">
+                                <a class="ReadMore" style="text-decoration: none; color: #2c3e50;"
+                                    href="https://www.mdidminfoway.com/blogs/online-php-course-in-rajkot">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Pagination-->
+                <div class="pagination-wrapper">
+                    <nav>
+                        <ul class="pagination">
+
+                            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                                <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                            </li>
+
+
+
+
+
+                            <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=2">2</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=3">3</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=4">4</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=5">5</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=6">6</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=7">7</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=8">8</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=9">9</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=10">10</a></li>
+
+                            <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+
+
+
+
+
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=135">135</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="https://www.mdidminfoway.com/blogs?page=136">136</a></li>
+
+
+                            <li class="page-item">
+                                <a class="page-link" href="https://www.mdidminfoway.com/blogs?page=2" rel="next"
+                                    aria-label="Next &raquo;">&rsaquo;</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <section class="col-lg-3">
+                <div class="sidebar">
+                    <h3 class="sidebar-title">Recent Posts</h3>
+                    <div class="sidebar-item search-form">
+                        <form action="">
+                            <input id="searchbar" onkeyup="search_animal()" name="search" placeholder="Search Blogs.."
+                                type="text">
+
+                            <ul id='list'>
+                                <span style="display: none;">
+                                    Best-PHP-training-in-Rajkot
+                                    Best PHP training in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts ">
+
+                                        <div class="post-item clearfix ">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753785848.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/best-php-training-in-rajkot"
+                                                    style="color:black; text-decoration: none;"> <b>Best PHP training in
+                                                        Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-29 10:44:08 "> 29 July 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    Best-PHP-course-in-Rajkot
+                                    Best PHP course in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753785363.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="https://www.mdidminfoway.com/blogs/best-php-course-in-rajkot"
+                                                    style="color:black; text-decoration: none;"> <b>Best PHP course in
+                                                        Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-29 10:36:03 "> 29 July 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    Online-PHP-internship-in-Rajkot
+                                    Online PHP internship in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753785082.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="" style="color:black; text-decoration: none;"> <b>Online PHP
+                                                        internship in Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-29 10:31:22 "> 29 July 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    online-PHP-training-in-Rajkot
+                                    online PHP training in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753784558.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="" style="color:black; text-decoration: none;"> <b>Online PHP
+                                                        training in Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-29 10:22:38 "> 29 July 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    online-PHP-course-in-Rajkot
+                                    online PHP course in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753781885.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="" style="color:black; text-decoration: none;"> <b>Online PHP
+                                                        course in Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-29 09:38:05 "> 29 July 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    online-CSS-traning-in-Rajkot
+                                    online CSS traning in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753767029.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="" style="color:black; text-decoration: none;"> <b>Online CSS
+                                                        traning in Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-29 05:30:29 "> 29 July 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    online-CSS-course-in-Rajkot
+                                    online CSS course in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753766675.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="" style="color:black; text-decoration: none;"> <b>Online CSS
+                                                        course in Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-29 05:24:35 "> 29 July 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    CSS-internship-in-Rajkot
+                                    CSS internship in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753765512.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="" style="color:black; text-decoration: none;"> <b>CSS internship
+                                                        in Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-29 05:05:12 "> 29 July 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    CSS-traning-in-Rajkot
+                                    CSS traning in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753765262.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="" style="color:black; text-decoration: none;"> <b>CSS traning in
+                                                        Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-29 05:01:02 "> 29 July 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    CSS-course-in-Rajkot
+                                    CSS course in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753765055.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+
+
+
+
+                                            <p><a href="" style="color:black; text-decoration: none;"> <b>CSS course in
+                                                        Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-29 04:57:35 "> 29 July 2025
+                                            </time>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    PHP-internship-in-Rajkot
+                                    PHP internship in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753772305.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+                                            <p><a href="https://www.mdidminfoway.com/blogs/php-internship-in-rajkot"
+                                                    style="color:black; text-decoration: none;"> <b>PHP internship in
+                                                        Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-28 11:14:44 "> 28 July 2025
+                                            </time>
+                                        </div>
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    PHP-training-in-Rajkot
+                                    PHP training in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753700514.jpg"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+                                            <p><a href="https://www.mdidminfoway.com/blogs/php-training-in-rajkot"
+                                                    style="color:black; text-decoration: none;"> <b>PHP training in
+                                                        Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-28 11:01:54 "> 28 July 2025
+                                            </time>
+                                        </div>
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    PHP-course-in-Rajkot
+                                    PHP course in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753700152.png"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+                                            <p><a href="https://www.mdidminfoway.com/blogs/php-course-in-rajkot"
+                                                    style="color:black; text-decoration: none;"> <b>PHP course in Rajkot
+                                                    </b></a>
+                                            </p>
+                                            <time datetime="2025-07-28 10:55:52 "> 28 July 2025
+                                            </time>
+                                        </div>
+                                    </div>
+                                </li>
+                                <span style="display: none;">
+                                    Best-Laravel-internship-in-Rajkot
+                                    Best Laravel internship in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753699194.jpg"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+                                            <p><a href="https://www.mdidminfoway.com/blogs/best-laravel-internship-in-rajkot"
+                                                    style="color:black; text-decoration: none;"> <b>Best Laravel
+                                                        internship in Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-28 10:39:54 "> 28 July 2025
+                                            </time>
+                                        </div>
+                                    </div>
+                                </li>
+                                <span>
+                                    Best-Laravel-training-in-Rajkot
+                                    Best Laravel training in Rajkot
+                                </span>
+                                <li class="animals">
+                                    <div class="sidebar-item recent-posts">
+
+                                        <div class="post-item clearfix">
+
+                                            <img loading="lazy"
+                                                src="https://www.mdidminfoway.com/blog/images/2025/07/1753698540.jpg"
+                                                style="width: 100%;
+max-width: 400px;
+height: auto;">
+                                            <p><a href="https://www.mdidminfoway.com/blogs/best-laravel-training-in-rajkot"
+                                                    style="color:black; text-decoration: none;"> <b>Best Laravel
+                                                        training in Rajkot </b></a>
+                                            </p>
+                                            <time datetime="2025-07-28 10:29:00 "> 28 July 2025
+                                            </time>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div><!-- End sidebar search formn-->
+                </div><!-- End sidebar -->
+            </section>
+        </div><!-- End blog sidebar -->
+    </div>
+    <!--Footer-->
+    <footer class="footer-wrapper overlay">
+        <div class="container py-5">
+            <div class="row text-white">
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">CONTACT US</h4>
+                    <p class="address">
+                        211, Vision 20-20, near Ramapir Chokadi, Rajkot, Gujarat 360007.
+                    </p>
+                    <p>
+                        <a href="tel:+91 8347193531">+91 8347193531</a>
+                    </p>
+                    <p>
+                        <a href="tel:+91 9426526980">+91 9426526980</a>
+                    </p>
+                    <p>
+                        <a href="mailto:mdidminfoway@gmail.com">mdidminfoway@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">WEBSITE DEVELOPMENT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Website</a></li>
+                        <li><a href="#">E-Commerce</a></li>
+                        <li><a href="#">Complete ERP</a></li>
+                        <li><a href="#">Informative Website</a></li>
+                        <li><a href="#">Custom Website</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">MOBILE APP DEVELOPMENT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Business App</a></li>
+                        <li><a href="#">E-Commerce App</a></li>
+                        <li><a href="#">Custom App</a></li>
+                        <li><a href="#">Android/iOS/Flutter</a></li>
+                        <li><a href="#">Complete ERP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">GRAPHICS DESIGNING</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Logo Design</a></li>
+                        <li><a href="#">Stationary Design</a></li>
+                        <li><a href="#">Product Video</a></li>
+                        <li><a href="#">Brochure/Company Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-4">
+                <p class="copyright" style="color: white">
+                    © Copyright
+                    <a href="https://www.mdidminfoway.com/" class="company-link">MDIDM INFOWAY</a>
+                    . All Rights Reserved
+                </p>
+                <p class="developed-by" style="color: white">
+                    Developed by
+                    <img src="../../../images/heart.png" alt="heart" class="heart-icon" />
+                    <a href="https://mdidminfoway.com/" class="company-link">MDIDM INFOWAY</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="Blog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Components/Header.js"></script>
+    <script src="/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+    <!--Work With Us Modal-->
+    <div class="modal fade" id="work-with-us-modal" tabindex="-1" aria-labelledby="work-with-us-modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content h-100">
+                <div class="modal-header pt-4 pb-0 no-border">
+                    <div class="modal-title w-100 text-center" id="work-with-us-modalLabel">
+                        <h2 class="form-title uppercase mb-2 fw-bold mt-3">ESTIMATE YOUR PROJECT</h2>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <form class="px-4" method="post" id="contact-form-popup" action="contectus">
+                        <input type="hidden" name="_token" value="your_token_here">
+                        <div class="form-row row">
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Name" name="namepopup" required>
+                            </div>
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="email" class="form-control" placeholder="Email" name="emailpopup" required>
+                            </div>
+                        </div>
+                        <div class="form-row row">
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Phone" name="phonepopup" required>
+                            </div>
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Subject" name="subjectpopup"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row row">
+                            <div class="col-12 pt-3 mt-2">
+                                <textarea class="form-control" rows="4" placeholder="Message" name="messagepopup"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center pt-4 pb-3">
+                            <input name="submit" type="submit" value="Work with us" class="uppercase p-2 w-25"
+                                style="background-color:#1e354c; color: white; border-radius: 8px;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

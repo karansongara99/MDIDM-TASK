@@ -1,0 +1,83 @@
+/* Hero Section Base Styles */
+.home-banner-sec {
+    position: relative;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.hero-text h1 {
+    padding: 20px;
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.hero-text h1 span {
+    display: block;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-text h1 span:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.hero-text h1 span:nth-child(2) {
+    animation-delay: 0.6s;
+}
+.hero-text h1 span:nth-child(3) {
+    animation-delay: 0.9s;
+}
+.hero-text h1 span:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+/* Video (GIF) Animation */
+.banner-video-wrap {
+    height: calc(100vh - 100px);
+    min-height: 500px;
+    padding: 0;
+    opacity: 0;
+    transform: translateX(-60px);
+    animation: slideInRight 1.2s ease-out 1s forwards;
+}
+
+.banner-video-wrap figure {
+    height: 88%;
+    width: 105%;
+    margin: 0;
+}
+
+.bnr-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

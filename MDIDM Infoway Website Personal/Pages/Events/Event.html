@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Event.css" />
+    <title>Events</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Components/Header.css">
+    <link rel="stylesheet" href="/Components/Footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/finalmainlogo.svg" alt="MDIDM Infoway Logo" height="50">
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark" href="/index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ABOUT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/About/About.html">OUR
+                                    COMPANY</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Training/Training.html">TRAINING
+                                    SESSION</a>
+                            </li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/RecentWork/RecentWork.html">OUR
+                                    RECENT
+                                    WORK</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Contact/Contact.html">CONTACT
+                                    US</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="portfolioDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PORTFOLIO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/LogoDesign.html">LOGO
+                                    DESIGN</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/SocialMediaPost.html">SOCIAL
+                                    MEDIA
+                                    POST</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark"
+                                    href="/Portfolio/BrochureDesign.html">BROCHURE DESIGN</a>
+                            </li>
+                            <li><a class="dropdown-item fw-bold text-dark"
+                                    href="/Portfolio/BusinessCardDesign.html">BUSINESS CARD
+                                    DESIGN</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/LetterHead.html">LETTER
+                                    HEAD</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/DigitalCard.html">DIGITAL
+                                    CARD</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/WebsiteDevelop.html">WEBSITE
+                                    DEVELOPMENT</a></li>
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/AppDevelop.html">APPLICATION
+                                    DEVELOPMENT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            BLOGS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Blogs/Blog/Blog.html">BLOGS</a>
+                            </li>
+                            <li><a class="dropdown-item fw-bold text-dark"
+                                    href="/Pages/Blogs/Student Blog/StudentBlog.html">STUDENTS
+                                    BLOGS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark"
+                            href="/Pages/Training/Traning.html">TRAINING</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark"
+                            href="/Pages/Student/Student.html">STUDENTS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark"
+                            href="/Pages/Events/Event.html">EVENTS</a></li>
+                </ul>
+            </div>
+            <a href="#" class="custom-btn" style="text-decoration: none;" data-bs-toggle="modal"
+                data-bs-target="#work-with-us-modal">
+                WORK WITH US &nbsp;&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="home-banner-sec">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Left: Heading Content -->
+                <div class="col-lg-6 col-md-12 hero-text" title="company title text" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <h1 class="heading p-5 m-5" data-tilt data-tilt-startX="1" data-tilt-startY="-1"
+                        data-tilt-full-page-listening style="font-size: 5rem;">
+                        <span>Complete</span><br />
+                        <span>IT Solution</span><br />
+                        <span>That Are</span><br />
+                        <span>Second to None</span>
+                    </h1>
+                </div>
+
+                <!-- Right: Video Content -->
+                <div class="col-lg-6 col-md-12 banner-video-wrap" data-aos="fade-left" data-aos-duration="1000">
+                    <figure>
+                        <img src="/images/event-hero.avif" alt="Events" class="img-fluid rounded" width="100%"
+                            height="50%" style="object-fit: cover;">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <!--Events Section-->
+    <section class="py-5" style="background-color: #ffffff;"> <!-- Changed to pure white background -->
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="mb-3 display-5 fw-bold"
+                        style="color: #2c3e50; position: relative; display: inline-block;">
+                        Our Events
+                        <span
+                            style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background: linear-gradient(90deg, #3498db, #e74c3c);"></span>
+                    </h2>
+                    <p class="text-muted mb-4">Discover our upcoming gatherings and experiences</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm overflow-hidden"
+                        style="transition: all 0.3s ease; background-color: #ffffff; border: 1px solid #e9ecef;">
+                        <!-- Changed card background to white and added subtle border -->
+                        <div class="overflow-hidden" style="height: 270px;">
+                            <img src="https://www.mdidminfoway.com/images/events/1751543924.jpeg"
+                                class="card-img-top h-100 w-100 object-fit-cover" alt="Digital Marketing"
+                                style="transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-body d-flex flex-column" style="background-color: #ffffff;">
+                            <!-- Ensured card body also has white background -->
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge rounded-pill px-3 py-2"
+                                    style="background-color:#2c3e50; color: white;">
+                                    Past Event
+                                </span>
+                                <span class="text-muted small">May 24, 2025</span>
+                            </div>
+                            <h5 class="card-title mb-3" style="color: #2c3e50; min-height: 3rem;">
+                                Digital Marketing
+                            </h5>
+                            <p class="card-text text-muted mb-4" style="min-height: 4.5rem;">
+                                In the digital era, businesses that aren&#039;t online are left behind. Whether
+                                you&#039;re a student, entrepr...
+                            </p>
+                            <div class="mt-auto text-center">
+                                <a href="https://www.mdidminfoway.com/events/5/digital-marketing"
+                                    class="px-4 rounded-pill"
+                                    style="background-color:#2c3e50; color: white; padding: 8px; text-decoration: none;;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm overflow-hidden"
+                        style="transition: all 0.3s ease; background-color: #ffffff; border: 1px solid #e9ecef;">
+                        <!-- Changed card background to white and added subtle border -->
+                        <div class="overflow-hidden" style="height: 270px;">
+                            <img src="https://www.mdidminfoway.com/images/events/1751547850.jpeg"
+                                class="card-img-top h-100 w-100 object-fit-cover" alt="Flutter &amp; Android"
+                                style="transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-body d-flex flex-column" style="background-color: #ffffff;">
+                            <!-- Ensured card body also has white background -->
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge rounded-pill px-3 py-2"
+                                    style="background-color: #2c3e50; color: white;">
+                                    Past Event
+                                </span>
+                                <span class="text-muted small">May 31, 2025</span>
+                            </div>
+                            <h5 class="card-title mb-3" style="color: #2c3e50; min-height: 3rem;">
+                                Flutter &amp; Android
+                            </h5>
+                            <p class="card-text text-muted mb-4" style="min-height: 4.5rem;">
+                                The “Flutter &amp; Android Application Development with Hands-on Practice” workshop was
+                                a full-day pract...
+                            </p>
+                            <div class="mt-auto text-center">
+                                <a href="https://www.mdidminfoway.com/events/6/flutter-android-application-development-with-hand-on-practice"
+                                    class="px-4 rounded-pill"
+                                    style="background-color:#2c3e50; color: white; padding: 8px; text-decoration: none;;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm overflow-hidden"
+                        style="transition: all 0.3s ease; background-color: #ffffff; border: 1px solid #e9ecef;">
+                        <!-- Changed card background to white and added subtle border -->
+                        <div class="overflow-hidden" style="height: 270px;">
+                            <img src="https://www.mdidminfoway.com/images/events/1751548866.jpeg"
+                                class="card-img-top h-100 w-100 object-fit-cover"
+                                alt="From Design to Delivery : The Live Process"
+                                style="transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-body d-flex flex-column" style="background-color: #ffffff;">
+                            <!-- Ensured card body also has white background -->
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge rounded-pill px-3 py-2"
+                                    style="background-color: #2c3e50; color: white;">
+                                    Past Event
+                                </span>
+                                <span class="text-muted small">Jun 07, 2025</span>
+                            </div>
+                            <h5 class="card-title mb-3" style="color: #2c3e50; min-height: 3rem;">
+                                From Design to Delivery : The Live Process
+                            </h5>
+                            <p class="card-text text-muted mb-4" style="min-height: 4.5rem;">
+                                This one-day live session was an eye-opener for students, creatives, and aspiring
+                                marketers who want...
+                            </p>
+                            <div class="mt-auto text-center">
+                                <a href="https://www.mdidminfoway.com/events/7/from-design-to-delivery-the-live-process"
+                                    class="px-4 rounded-pill"
+                                    style="background-color:#2c3e50; color: white; padding: 8px; text-decoration: none;;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm overflow-hidden"
+                        style="transition: all 0.3s ease; background-color: #ffffff; border: 1px solid #e9ecef;">
+                        <!-- Changed card background to white and added subtle border -->
+                        <div class="overflow-hidden" style="height: 270px;">
+                            <img src="https://www.mdidminfoway.com/images/events/1751549035.jpeg"
+                                class="card-img-top h-100 w-100 object-fit-cover" alt="IT Career Insights for Intern"
+                                style="transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-body d-flex flex-column" style="background-color: #ffffff;">
+                            <!-- Ensured card body also has white background -->
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge rounded-pill px-3 py-2"
+                                    style="background-color: #2c3e50; color: white;">
+                                    Past Event
+                                </span>
+                                <span class="text-muted small">Jun 14, 2025</span>
+                            </div>
+                            <h5 class="card-title mb-3" style="color: #2c3e50; min-height: 3rem;">
+                                IT Career Insights for Intern
+                            </h5>
+                            <p class="card-text text-muted mb-4" style="min-height: 4.5rem;">
+                                The &quot;IT Career Insights for Intern&quot; event held on June 14, 2025, brought
+                                together budding minds and...
+                            </p>
+                            <div class="mt-auto text-center">
+                                <a href="https://www.mdidminfoway.com/events/8/it-career-insights-for-intern"
+                                    class="px-4 rounded-pill"
+                                    style="background-color:#2c3e50; color: white; padding: 8px; text-decoration: none;;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm overflow-hidden"
+                        style="transition: all 0.3s ease; background-color: #ffffff; border: 1px solid #e9ecef;">
+                        <!-- Changed card background to white and added subtle border -->
+                        <div class="overflow-hidden" style="height: 270px;">
+                            <img src="https://www.mdidminfoway.com/images/events/1751549290.jpeg"
+                                class="card-img-top h-100 w-100 object-fit-cover" alt="Corporate Work Culture"
+                                style="transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-body d-flex flex-column" style="background-color: #ffffff;">
+                            <!-- Ensured card body also has white background -->
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge rounded-pill px-3 py-2"
+                                    style="background-color: #2c3e50; color: white;">
+                                    Past Event
+                                </span>
+                                <span class="text-muted small">Jun 21, 2025</span>
+                            </div>
+                            <h5 class="card-title mb-3" style="color: #2c3e50; min-height: 3rem;">
+                                Corporate Work Culture
+                            </h5>
+                            <p class="card-text text-muted mb-4" style="min-height: 4.5rem;">
+                                The “Corporate Work Culture – A Practical Insight” event was designed to bridge the gap
+                                between acad...
+                            </p>
+                            <div class="mt-auto text-center">
+                                <a href="https://www.mdidminfoway.com/events/9/corporate-work-culture-a-practical-insight"
+                                    class="px-4 rounded-pill"
+                                    style="background-color:#2c3e50; color: white; padding: 8px; text-decoration: none;;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm overflow-hidden"
+                        style="transition: all 0.3s ease; background-color: #ffffff; border: 1px solid #e9ecef;">
+                        <!-- Changed card background to white and added subtle border -->
+                        <div class="overflow-hidden" style="height: 270px;">
+                            <img src="https://www.mdidminfoway.com/images/events/1751549492.jpeg"
+                                class="card-img-top h-100 w-100 object-fit-cover"
+                                alt="Crack Any Interview with Confidence" style="transition: transform 0.5s ease;">
+                        </div>
+                        <div class="card-body d-flex flex-column" style="background-color: #ffffff;">
+                            <!-- Ensured card body also has white background -->
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge rounded-pill px-3 py-2"
+                                    style="background-color: #2c3e50; color: white;">
+                                    Past Event
+                                </span>
+                                <span class="text-muted small">Jun 28, 2025</span>
+                            </div>
+                            <h5 class="card-title mb-3" style="color: #2c3e50; min-height: 3rem;">
+                                Crack Any Interview with Confidence
+                            </h5>
+                            <p class="card-text text-muted mb-4" style="min-height: 4.5rem;">
+                                Facing interviews can be stressful — but with the right mindset, knowledge, and
+                                preparation, anyone...
+                            </p>
+                            <div class="mt-auto text-center">
+                                <a href="https://www.mdidminfoway.com/events/10/crack-any-interview-with-confidence"
+                                    class="px-4 rounded-pill"
+                                    style="background-color:#2c3e50; color: white; padding: 8px; text-decoration: none;;">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 d-flex justify-content-center">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="" aria-label="Previous">
+                                    <span aria-hidden="true">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item ">
+                                <a class="page-link" href="https://www.mdidminfoway.com/events?page=2"
+                                    aria-label="Next">
+                                    <span aria-hidden="true" style="color: #2c3e50;">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Newsletter-->
+    <section class="newsletter py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Stay Updated on Our Events</h2>
+                    <p class="mb-4">Subscribe to our newsletter to get notifications about upcoming events.</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="w-100 rounded p-1"
+                                style="background-color: #2c3e50; color: white;">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Our Clients -->
+    <section class="our-partners py-5">
+        <div class="container">
+            <div class="section-title text-center mb-4">
+                <h2>OUR CLIENTS</h2>
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider-track">
+                    <!-- Repeat logos twice for seamless loop -->
+                    <div class="client-logo-circle"><img src="/images/client/client-1.png" alt="client-1"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-2.png" alt="client-2"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-3.png" alt="client-3"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-4.png" alt="client-4"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-5.png" alt="client-5"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-6.png" alt="client-6"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-7.png" alt="client-7"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-8.png" alt="client-8"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-9.png" alt="client-9"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-10.png" alt="client-10"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-11.png" alt="client-11"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-19.png" alt="client-19"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-20.png" alt="client-20"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-21.png" alt="client-21"></div>
+
+                    <!-- Repeat again for seamless loop -->
+                    <div class="client-logo-circle"><img src="/images/client/client-1.png" alt="client-1"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-2.png" alt="client-2"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-3.png" alt="client-3"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-4.png" alt="client-4"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-5.png" alt="client-5"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-6.png" alt="client-6"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-7.png" alt="client-7"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-8.png" alt="client-8"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-9.png" alt="client-9"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-10.png" alt="client-10"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-11.png" alt="client-11"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-19.png" alt="client-19"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-20.png" alt="client-20"></div>
+                    <div class="client-logo-circle"><img src="/images/client/client-21.png" alt="client-21"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section class="contact-form-section py-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">SAY HELLO</h2>
+                <p class="text-muted">Talk to us about what we do and how we can help your brand.</p>
+            </div>
+            <form class="form-box">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <input type="text" required class="form-control input-box" placeholder="Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" required class="form-control input-box" placeholder="Email">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" required class="form-control input-box" placeholder="Phone">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" required class="form-control input-box" placeholder="Subject">
+                    </div>
+                    <div class="col-12">
+                        <textarea rows="5" required class="form-control input-box" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn p-3 w-25 rounded fw-bold"
+                        style="background-color:#2c3e50; color: white;">WORK WITH US</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <br>
+
+    <!--Footer-->
+    <footer class="footer-wrapper overlay">
+        <div class="container py-5">
+            <div class="row text-white">
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">CONTACT US</h4>
+                    <p class="address">
+                        211, Vision 20-20, near Ramapir Chokadi, Rajkot, Gujarat 360007.
+                    </p>
+                    <p>
+                        <a href="tel:+91 8347193531">+91 8347193531</a>
+                    </p>
+                    <p>
+                        <a href="tel:+91 9426526980">+91 9426526980</a>
+                    </p>
+                    <p>
+                        <a href="mailto:mdidminfoway@gmail.com">mdidminfoway@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">WEBSITE DEVELOPMENT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Website</a></li>
+                        <li><a href="#">E-Commerce</a></li>
+                        <li><a href="#">Complete ERP</a></li>
+                        <li><a href="#">Informative Website</a></li>
+                        <li><a href="#">Custom Website</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">MOBILE APP DEVELOPMENT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Business App</a></li>
+                        <li><a href="#">E-Commerce App</a></li>
+                        <li><a href="#">Custom App</a></li>
+                        <li><a href="#">Android/iOS/Flutter</a></li>
+                        <li><a href="#">Complete ERP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h4 class="footer-title">GRAPHICS DESIGNING</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Logo Design</a></li>
+                        <li><a href="#">Stationary Design</a></li>
+                        <li><a href="#">Product Video</a></li>
+                        <li><a href="#">Brochure/Company Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-4">
+                <p class="copyright" style="color: white">
+                    © Copyright
+                    <a href="https://www.mdidminfoway.com/" class="company-link">MDIDM INFOWAY</a>
+                    . All Rights Reserved
+                </p>
+                <p class="developed-by" style="color: white">
+                    Developed by
+                    <img src="../../../images/heart.png" alt="heart" class="heart-icon" />
+                    <a href="https://mdidminfoway.com/" class="company-link">MDIDM INFOWAY</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Pages/Events/Event.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Work With Us Modal-->
+    <div class="modal fade" id="work-with-us-modal" tabindex="-1" aria-labelledby="work-with-us-modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content h-100">
+                <div class="modal-header pt-4 pb-0 no-border">
+                    <div class="modal-title w-100 text-center" id="work-with-us-modalLabel">
+                        <h2 class="form-title uppercase mb-2 fw-bold mt-3">ESTIMATE YOUR PROJECT</h2>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <form class="px-4" method="post" id="contact-form-popup" action="contectus">
+                        <input type="hidden" name="_token" value="your_token_here">
+                        <div class="form-row row">
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Name" name="namepopup" required>
+                            </div>
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="email" class="form-control" placeholder="Email" name="emailpopup" required>
+                            </div>
+                        </div>
+                        <div class="form-row row">
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Phone" name="phonepopup" required>
+                            </div>
+                            <div class="col-12 col-md-6 pt-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Subject" name="subjectpopup"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row row">
+                            <div class="col-12 pt-3 mt-2">
+                                <textarea class="form-control" rows="4" placeholder="Message" name="messagepopup"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center pt-4 pb-3">
+                            <input name="submit" type="submit" value="Work with us" class="uppercase p-2 w-25"
+                                style="background-color:#1e354c; color: white; border-radius: 8px;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

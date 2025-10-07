@@ -1,0 +1,153 @@
+/* Hero Section Base Styles */
+.home-banner-sec {
+    position: relative;
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.hero-text h1 {
+    padding: 20px;
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.hero-text h1 span {
+    display: block;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-text h1 span:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.hero-text h1 span:nth-child(2) {
+    animation-delay: 0.6s;
+}
+.hero-text h1 span:nth-child(3) {
+    animation-delay: 0.9s;
+}
+.hero-text h1 span:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+/* Video (GIF) Animation */
+.banner-video-wrap {
+    height: calc(100vh - 100px);
+    min-height: 500px;
+    padding: 0;
+    opacity: 0;
+    transform: translateX(-60px);
+    animation: slideInRight 1.2s ease-out 1s forwards;
+}
+
+.banner-video-wrap figure {
+    height: 88%;
+    width: 105%;
+    margin: 0;
+}
+
+.bnr-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+/*Serach Bar*/
+#searchbar {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.animals {
+    font-size: 1.2em;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animals:last-child {
+    border-bottom: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Pagination*/
+.pagination-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a,
+.pagination span {
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: #f1f1f1;
+}
+
+.pagination .active span {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
