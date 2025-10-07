@@ -1,0 +1,67 @@
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a3c5e;
+}
+
+.navbar-brand img {
+    margin-left: 60px;
+    width: 200px;
+    height: 100px;
+}
+
+.navbar-brand img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.navbar-brand span {
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #1a3c5e;
+    display: block;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #1a3c5e !important;
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+.nav-link:hover {
+    color: #0d2a47 !important;
+    transform: scale(1.1);
+}
+
+.custom-btn {
+    background-color: #1a3c5e;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 70px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the button background */
+.custom-btn:hover {
+    background-color: #0d2a47;
+    color: white;
+    text-decoration: none;
+}
+
+/* Animate the arrow icon */
+.arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Move the arrow icon to the right on hover */
+.custom-btn:hover .arrow-icon {
+    transform: translateX(5px);
+}
+
