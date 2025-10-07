@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MDIDM Infoway</title>
+  <link rel="stylesheet" href="/Components/Footer.css" />
+  <link rel="stylesheet" href="/Components/Header.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/Pages/About/About.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!--Header-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/images/finalmainlogo.svg" alt="MDIDM Infoway Logo" height="50">
+      </a>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="/index.html">HOME</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="aboutDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              ABOUT
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item fw-bold text-dark" href="/Pages/About/About.html">OUR COMPANY</a></li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Training/Traning.html">TRAINING SESSION</a>
+              </li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Pages/RecentWork/RecentWork.html">OUR RECENT
+                  WORK</a></li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Contact/Contact.html">CONTACT US</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="portfolioDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              PORTFOLIO
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+              <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/LogoDesign.html">LOGO DESIGN</a></li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/SocialMediaPost.html">SOCIAL MEDIA
+                  POST</a></li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/BrochureDesign.html">BROCHURE DESIGN</a>
+              </li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/BusinessCardDesign.html">BUSINESS CARD
+                  DESIGN</a></li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/LetterHead.html">LETTER HEAD</a></li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/DigitalCard.html">DIGITAL CARD</a></li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/WebsiteDevelop.html">WEBSITE
+                  DEVELOPMENT</a></li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Portfolio/AppDevelop.html">APPLICATION
+                  DEVELOPMENT</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="aboutDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              BLOGS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Blogs/Blog/Blog.html">BLOGS</a></li>
+              <li><a class="dropdown-item fw-bold text-dark" href="/Pages/Blogs/Student Blog/StudentBlog.html">STUDENTS
+                  BLOGS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="/Pages/Training/Traning.html">TRAINING</a>
+          </li>
+          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="/Pages/Student/Student.html">STUDENTS</a>
+          </li>
+          <li class="nav-item"><a class="nav-link fw-bold text-dark" href="/Pages/Events/Event.html">EVENTS</a></li>
+        </ul>
+      </div>
+      <a href="#" class="custom-btn" style="text-decoration: none;" data-bs-toggle="modal"
+        data-bs-target="#work-with-us-modal">
+        WORK WITH US &nbsp;&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="home-banner-sec">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Left: Heading Content -->
+        <div class="col-lg-6 col-md-12 hero-text" title="company title text">
+          <h1 class="heading p-5 m-5" data-tilt data-tilt-startX="1" data-tilt-startY="-1" data-tilt-full-page-listening
+            style="font-size: 5rem;">
+            <span>Complete</span>
+            <span>IT Solution</span>
+            <span>That Are</span>
+            <span>Second to None</span>
+          </h1>
+        </div>
+
+        <!-- Right: Video Content -->
+        <div class="col-lg-6 col-md-12 banner-video-wrap">
+          <figure>
+            <video loop autoplay muted class="bnr-video" id="bnr-video">
+              <source src="../../images/banner-video-brake-720.m4v" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--About-->
+  <section class="about-us-sec" id="about">
+    <div class="container-fluid p-0">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6">
+          <div class="about-us-content">
+            <h1 class="section-title">
+              BEST DESIGN AND DEVELOPMENT COMPANY IN RAJKOT- MDIDM INFOWAY
+            </h1>
+            <p class="about-description">
+              MDIDM INFOWAY is a Brand Consulting Company based in Rajkot in
+              the Business State of Gujarat, India. We also have our Marketing
+              offices in Rajkot. We provide services broadly in various Areas-
+              website development, Application Development, Brand Design,
+              E-Greetings, Logo Design, Brochure Design Marketing
+              Communications. Based on your Long term/ Medium term/ Short term
+              requirements and budget, we tailor make, customize and bundle
+              our different services for you. We provide services to clients
+              all over India. We have provided services to our International
+              Clients in UK, USA, Dubai, Nigeria, etc, 100+ Projects
+              Completed, 2000+ We deliver on time and much more more. We also
+              provide digital card for your business.
+            </p>
+            <div class="explore-wrap">
+              <a href="#" class="explore-btn">
+                EXPLORE MORE &nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ch-video-wrap">
+            <div class="ch-bg-img-wrap">
+              <img src="/images/pi.svg" alt="MDIDM Pattern" class="ch-bg-img" />
+              <video loop autoplay muted playsinline class="bnr-ch-video" id="bnr-ch-video">
+                <source src="/images/menu-blue.svg" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Our Placed Students -->
+  <div class="section-title text-center mb-4">
+    <h2>OUR PLACED STUDENTS</h2>
+  </div>
+  <section class="our-partners py-5">
+    <div class="container">
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <!-- Repeat logos twice for seamless loop -->
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728901286.png"
+              alt="student-1"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728901492.jpg"
+              alt="student-2"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728901925.png"
+              alt="student-3"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728902291.png"
+              alt="student-4"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728902556.jpg"
+              alt="student-5"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728901286.png"
+              alt="student-6"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728902600.png"
+              alt="student-7"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728903209.jpg"
+              alt="student-8"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728902692.jpg"
+              alt="student-9"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728902789.jpg"
+              alt="student-10"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1729770901.jpg"
+              alt="student-11"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1737449845.png"
+              alt="student-19"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1737603935.png"
+              alt="student-20"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1737603935.png"
+              alt="student-21"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753449359.png"
+              alt="student-22"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753443560.png"
+              alt="student-23"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753441810.jpg"
+              alt="student-24"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753441758.jpg"
+              alt="student-25"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753449501.jpg"
+              alt="student-26"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753449562.jpg"
+              alt="student-27"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753441351.jpg"
+              alt="student-28"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1737605666.jpg"
+              alt="student-29"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753524857.jpg"
+              alt="student-30"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753524919.jpg"
+              alt="student-31"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753524992.jpg"
+              alt="student-32"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525234.jpg"
+              alt="student-33"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525338.jpg"
+              alt="student-34"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525525.jpg"
+              alt="student-35"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525573.png"
+              alt="student-36"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525624.jpg"
+              alt="student-37"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525684.jpg"
+              alt="student-38"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525748.jpg"
+              alt="student-39"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525812.png"
+              alt="student-40"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525868.png"
+              alt="student-41"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753529960.png"
+              alt="student-42"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753707509.jpg"
+              alt="student-43"></div>
+
+          <!-- Repeat again for seamless loop -->
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728901492.jpg"
+              alt="student-1"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728901925.png"
+              alt="student-2"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728902291.png"
+              alt="student-3"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728902556.jpg"
+              alt="student-4"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728901286.png"
+              alt="student-5"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728902600.png"
+              alt="student-6"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728903209.jpg"
+              alt="student-7"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728902692.jpg"
+              alt="student-8"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728902789.jpg"
+              alt="student-9"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1729770901.jpg"
+              alt="student-10"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1737449845.png"
+              alt="student-11"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1737603935.png"
+              alt="student-12"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1737603935.png"
+              alt="student-13"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753449359.png"
+              alt="student-14"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753443560.png"
+              alt="student-15"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753441810.jpg"
+              alt="student-16"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753441758.jpg"
+              alt="student-17"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753449501.jpg"
+              alt="student-18"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753449562.jpg"
+              alt="student-19"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753441351.jpg"
+              alt="student-20"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728901286.png"
+              alt="student-1"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1728901286.png"
+              alt="student-21"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1737605666.jpg"
+              alt="student-22"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753524857.jpg"
+              alt="student-23"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753524919.jpg"
+              alt="student-24"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753524992.jpg"
+              alt="student-25"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525234.jpg"
+              alt="student-26"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525338.jpg"
+              alt="student-27"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525525.jpg"
+              alt="student-28"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525573.png"
+              alt="student-29"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525624.jpg"
+              alt="student-30"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525684.jpg"
+              alt="student-31"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525748.jpg"
+              alt="student-32"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525812.png"
+              alt="student-33"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753525868.png"
+              alt="student-34"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753529960.png"
+              alt="student-35"></div>
+          <div class="student-logo-circle"><img src="https://www.mdidminfoway.com/placed_stud/1753707509.jpg"
+              alt="student-36"></div>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="d-flex justify-content-center">
+      <a href="https://www.mdidminfoway.com/students" class="btn"
+        style="background-color: #2c235a; color: white; padding: 12px 30px; border-radius: 8px; font-weight: 600;">
+        <span>View all Students</span>
+      </a>
+    </div>
+
+  </section>
+
+  <br>
+  <br>
+  <br>
+
+  
+
+  <!-- Our 1000+ projects section -->
+  <section class="all-clients" id="portfolio">
+    <div class="container pb-5">
+      <div class="row justify-content-center">
+        <div class="col-12 all-clients-title">
+          <div id="value-1000" class="wartermark-text bold">0</div>
+          <div class="title uppercase bold mb-5 ft40">We've worked in 1000+ PROJECTS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Service Portfolio -->
+  <section class="recognition py-5">
+    <div class="container">
+      <ul class="service-card-list row gx-0">
+
+        <div class="aabbcc col-lg-3 col-md-6 col-sm-12 mb-3" data-tilt data-tilt-scale="1.1">
+          <a href="https://www.mdidminfoway.com/portfolio/logo-design">
+            <li class="service-card"
+              style="background-image: url('https://www.mdidminfoway.com/home_producs_img/LOGO DESIGN.jpg');">
+              <div><span>LOGO DESIGN</span></div>
+            </li>
+          </a>
+        </div>
+
+        <div class="aabbcc col-lg-3 col-md-6 col-sm-12 mb-3" data-tilt data-tilt-scale="1.1">
+          <a href="https://www.mdidminfoway.com/portfolio/social-media-post">
+            <li class="service-card"
+              style="background-image: url('https://www.mdidminfoway.com/home_producs_img/SOCIAL MEDIA POST.png');">
+              <div><span>SOCIAL MEDIA POST</span></div>
+            </li>
+          </a>
+        </div>
+
+        <div class="aabbcc col-lg-3 col-md-6 col-sm-12 mb-3" data-tilt data-tilt-scale="1.1">
+          <a href="https://www.mdidminfoway.com/portfolio/brochure-design">
+            <li class="service-card"
+              style="background-image: url('https://www.mdidminfoway.com/home_producs_img/BROCHURE DESIGN.png');">
+              <div><span>BROCHURE DESIGN</span></div>
+            </li>
+          </a>
+        </div>
+
+        <div class="aabbcc col-lg-3 col-md-6 col-sm-12 mb-3" data-tilt data-tilt-scale="1.1">
+          <a href="https://www.mdidminfoway.com/portfolio/business-card-design">
+            <li class="service-card"
+              style="background-image: url('https://www.mdidminfoway.com/home_producs_img/BUSINESS CARD.png');">
+              <div><span>BUSINESS CARD DESIGN</span></div>
+            </li>
+          </a>
+        </div>
+
+        <div class="aabbcc col-lg-3 col-md-6 col-sm-12 mb-3" data-tilt data-tilt-scale="1.1">
+          <a href="https://www.mdidminfoway.com/portfolio/letter-head">
+            <li class="service-card"
+              style="background-image: url('https://www.mdidminfoway.com/home_producs_img/LETTER HEAD DESIGN.png');">
+              <div><span>LETTER HEAD</span></div>
+            </li>
+          </a>
+        </div>
+
+        <div class="aabbcc col-lg-3 col-md-6 col-sm-12 mb-3" data-tilt data-tilt-scale="1.1">
+          <a href="https://www.mdidminfoway.com/portfolio/digital-card">
+            <li class="service-card"
+              style="background-image: url('https://www.mdidminfoway.com/home_producs_img/DIGITAL CARD DESIGN.jpg');">
+              <div><span>DIGITAL CARD</span></div>
+            </li>
+          </a>
+        </div>
+
+        <div class="aabbcc col-lg-3 col-md-6 col-sm-12 mb-3" data-tilt data-tilt-scale="1.1">
+          <a href="https://www.mdidminfoway.com/portfolio/website-development">
+            <li class="service-card"
+              style="background-image: url('https://www.mdidminfoway.com/home_producs_img/WEBSITES DEVELOPMENT.png');">
+              <div><span>WEBSITE DEVELOPMENT</span></div>
+            </li>
+          </a>
+        </div>
+
+        <div class="aabbcc col-lg-3 col-md-6 col-sm-12 mb-3" data-tilt data-tilt-scale="1.1">
+          <a href="https://www.mdidminfoway.com/portfolio/application-development">
+            <li class="service-card"
+              style="background-image: url('https://www.mdidminfoway.com/home_producs_img/APPLICATION DEVELOPMENT.png');">
+              <div><span>APPLICATION DEVELOPMENT</span></div>
+            </li>
+          </a>
+        </div>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- Company Describe Section -->
+  <section class="recognition py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row d-flex align-items-center my-5">
+        <!-- Left Column -->
+        <div class="col-xs-12 col-lg-5 col-xl-6 mb-5 pr-lg-5">
+          <div class="title">MDIDM INFOWAY</div>
+          <p class="describe">
+            MDIDM INFOWAY stands as a premier Brand Consulting Company, headquartered in the vibrant business hub of
+            Rajkot, Gujarat, India. Our reach extends far beyond our local roots, with strategic marketing offices also
+            located in Rajkot. Specializing in a spectrum of services, we excel in website development, Application
+            Development, Brand Design, E-Greetings, Logo Design, Brochure Design, and Marketing Communications.
+            Punctuality and precision define our work ethic. With a track record of delivering over 2000 projects on
+            time, we prioritize efficiency without compromising on quality. Additionally, embracing the digital age,
+            we offer innovative digital card solutions tailored specifically for your business needs.
+            MDIDM INFOWAY isn't just a consulting firm; it's a partner in your journey towards brand excellence and
+            market success. Collaborate with us, and let's turn your brand vision into a tangible reality, setting new
+            standards of excellence in the dynamic world of business and branding.
+          </p>
+        </div>
+
+        <!-- Right Column (Boxes) -->
+        <div class="col-xs-12 col-lg-7 col-xl-6 outer-client-wrap">
+          <div class="d-flex flex-wrap outer-client">
+            <div class="d-flex flex-column mr-4 box-wrap1">
+              <div class="box box-1 active big mb-4">
+                <p class="number font-weight-bold mb-3">100+</p>
+                <p class="content text-uppercase font-weight-bold">Clients<br>Worldwide</p>
+              </div>
+              <div class="box box-2 small border-bl align-self-end">
+                <p class="number font-weight-bold mb-3">1000+</p>
+                <p class="content text-uppercase font-weight-bold">Websites<br>Developed</p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column mt-4 box-wrap2">
+              <div class="box box-2 small align-self-start mb-4">
+                <p class="number font-weight-bold mb-3">1000+</p>
+                <p class="content text-uppercase font-weight-bold">Apps<br>Developed</p>
+              </div>
+              <div class="box box-1 big border-br mb-4">
+                <p class="number font-weight-bold mb-3">10+</p>
+                <p class="content text-uppercase font-weight-bold">Years of<br>Experiences</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Our Clients -->
+  <section class="our-partners py-5">
+    <div class="container">
+      <div class="section-title text-center mb-4">
+        <h2>OUR CLIENTS</h2>
+      </div>
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <!-- Repeat logos twice for seamless loop -->
+          <div class="client-logo-circle"><img src="/images/client/client-1.png" alt="client-1"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-2.png" alt="client-2"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-3.png" alt="client-3"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-4.png" alt="client-4"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-5.png" alt="client-5"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-6.png" alt="client-6"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-7.png" alt="client-7"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-8.png" alt="client-8"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-9.png" alt="client-9"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-10.png" alt="client-10"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-11.png" alt="client-11"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-19.png" alt="client-19"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-20.png" alt="client-20"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-21.png" alt="client-21"></div>
+
+          <!-- Repeat again for seamless loop -->
+          <div class="client-logo-circle"><img src="/images/client/client-1.png" alt="client-1"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-2.png" alt="client-2"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-3.png" alt="client-3"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-4.png" alt="client-4"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-5.png" alt="client-5"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-6.png" alt="client-6"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-7.png" alt="client-7"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-8.png" alt="client-8"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-9.png" alt="client-9"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-10.png" alt="client-10"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-11.png" alt="client-11"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-19.png" alt="client-19"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-20.png" alt="client-20"></div>
+          <div class="client-logo-circle"><img src="/images/client/client-21.png" alt="client-21"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Contact-->
+  <section class="contact-form-section py-5" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">SAY HELLO</h2>
+        <p class="text-muted">Talk to us about what we do and how we can help your brand.</p>
+      </div>
+      <form class="form-box">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <input type="text" required class="form-control input-box" placeholder="Name">
+          </div>
+          <div class="col-md-6">
+            <input type="email" required class="form-control input-box" placeholder="Email">
+          </div>
+          <div class="col-md-6">
+            <input type="text" required class="form-control input-box" placeholder="Phone">
+          </div>
+          <div class="col-md-6">
+            <input type="text" required class="form-control input-box" placeholder="Subject">
+          </div>
+          <div class="col-12">
+            <textarea rows="5" required class="form-control input-box" placeholder="Message"></textarea>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <button type="submit" class="btn p-3 w-25 rounded fw-bold"
+            style="background-color:#2c3e50; color: white;">WORK WITH US</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="footer-wrapper overlay">
+    <div class="container py-5">
+      <div class="row text-white">
+        <div class="col-6 col-md-3 mb-4">
+          <h4 class="footer-title">CONTACT US</h4>
+          <p class="address">
+            211, Vision 20-20, near Ramapir Chokadi, Rajkot, Gujarat 360007.
+          </p>
+          <p>
+            <a href="tel:+91 8347193531">+91 8347193531</a>
+          </p>
+          <p>
+            <a href="tel:+91 9426526980">+91 9426526980</a>
+          </p>
+          <p>
+            <a href="mailto:mdidminfoway@gmail.com">mdidminfoway@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4">
+          <h4 class="footer-title">WEBSITE DEVELOPMENT</h4>
+          <ul class="footer-links">
+            <li><a href="#">Business Website</a></li>
+            <li><a href="#">E-Commerce</a></li>
+            <li><a href="#">Complete ERP</a></li>
+            <li><a href="#">Informative Website</a></li>
+            <li><a href="#">Custom Website</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4">
+          <h4 class="footer-title">MOBILE APP DEVELOPMENT</h4>
+          <ul class="footer-links">
+            <li><a href="#">Business App</a></li>
+            <li><a href="#">E-Commerce App</a></li>
+            <li><a href="#">Custom App</a></li>
+            <li><a href="#">Android/iOS/Flutter</a></li>
+            <li><a href="#">Complete ERP</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 mb-4">
+          <h4 class="footer-title">GRAPHICS DESIGNING</h4>
+          <ul class="footer-links">
+            <li><a href="#">Social Media Management</a></li>
+            <li><a href="#">Logo Design</a></li>
+            <li><a href="#">Stationary Design</a></li>
+            <li><a href="#">Product Video</a></li>
+            <li><a href="#">Brochure/Company Profile</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center mt-4">
+        <p class="copyright" style="color: white">
+          © Copyright
+          <a href="https://www.mdidminfoway.com/" class="company-link">MDIDM INFOWAY</a>
+          . All Rights Reserved
+        </p>
+        <p class="developed-by" style="color: white">
+          Developed by
+          <img src="../../images/heart.png" alt="heart" class="heart-icon" />
+          <a href="https://mdidminfoway.com/" class="company-link">MDIDM INFOWAY</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/Components/Header.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+  <!--Work With Us Modal-->
+  <div class="modal fade" id="work-with-us-modal" tabindex="-1" aria-labelledby="work-with-us-modalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content h-100">
+        <div class="modal-header pt-4 pb-0 no-border">
+          <div class="modal-title w-100 text-center" id="work-with-us-modalLabel">
+            <h2 class="form-title uppercase mb-2 fw-bold mt-3">ESTIMATE YOUR PROJECT</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <form class="px-4" method="post" id="contact-form-popup" action="contectus">
+            <input type="hidden" name="_token" value="your_token_here">
+            <div class="form-row row">
+              <div class="col-12 col-md-6 pt-3 mt-2">
+                <input type="text" class="form-control" placeholder="Name" name="namepopup" required>
+              </div>
+              <div class="col-12 col-md-6 pt-3 mt-2">
+                <input type="email" class="form-control" placeholder="Email" name="emailpopup" required>
+              </div>
+            </div>
+            <div class="form-row row">
+              <div class="col-12 col-md-6 pt-3 mt-2">
+                <input type="text" class="form-control" placeholder="Phone" name="phonepopup" required>
+              </div>
+              <div class="col-12 col-md-6 pt-3 mt-2">
+                <input type="text" class="form-control" placeholder="Subject" name="subjectpopup" required>
+              </div>
+            </div>
+            <div class="form-row row">
+              <div class="col-12 pt-3 mt-2">
+                <textarea class="form-control" rows="4" placeholder="Message" name="messagepopup" required></textarea>
+              </div>
+            </div>
+            <div class="text-center pt-4 pb-3">
+              <input name="submit" type="submit" value="Work with us" class="uppercase p-2 w-25"
+                style="background-color:#1e354c; color: white; border-radius: 8px;">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
